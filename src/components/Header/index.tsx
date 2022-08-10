@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { NavLink } from '../NavLink'
+
 import logo from '../../../public/images/logo.svg'
 import styles from './styles.module.scss'
 
@@ -15,21 +17,22 @@ export function Header() {
         </Link>
 
         <nav>
-          <Link href="/" passHref>
+          <NavLink href="/" activeClassName={styles.active} passHref>
             <a>Home</a>
-          </Link>
-          <Link href="/posts" passHref>
+          </NavLink>
+          <NavLink href="/posts" activeClassName={styles.active} passHref>
             <a>Conteúdos</a>
-          </Link>
-          <Link href="/sobre" passHref>
+          </NavLink>
+          <NavLink href="/sobre" activeClassName={styles.active} passHref>
             <a>Quem somos?</a>
-          </Link>
+          </NavLink>
         </nav>
 
         <a
           className={styles.btnReady}
           type="button"
           href="https://linkedin.com"
+          rel="noreferrer"
         >
           Começar
         </a>

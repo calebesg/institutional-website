@@ -2,6 +2,7 @@
   max-width: 1200px;
   min-height: calc(100vh - 6rem);
   margin: 0 auto;
+  padding: 0 2rem;
 
   display: flex;
   justify-content: space-between;
@@ -56,6 +57,7 @@
 .wrapper {
   max-width: 1200px;
   margin: 5.5rem auto;
+  padding: 0 2rem;
 
   display: flex;
   justify-content: space-between;
@@ -90,11 +92,12 @@
 .footer {
   max-width: 1200px;
   margin: 10rem auto 6rem;
+  padding: 0 2rem;
 
   h2 {
     font-size: 2.5rem;
     line-height: 4rem;
-    max-width: 90%;
+    width: 90%;
     font-weight: 900;
     color: var(--white);
 
@@ -124,6 +127,89 @@
 
     &:hover {
       filter: brightness(1.1);
+    }
+  }
+}
+
+@media (max-width: 1130px) {
+  .banner {
+    img {
+      max-width: 550px;
+    }
+
+    section {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .wrapper {
+    img {
+      max-width: 350px;
+    }
+  }
+}
+
+@media (max-width: 955px) {
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+
+    img {
+      width: 100%;
+      margin: 0 0 2rem;
+    }
+
+    section {
+      text-align: center;
+
+      h1 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+      }
+
+      span {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .wrapper {
+    flex-direction: column;
+    margin: 4rem auto;
+    gap: 3rem;
+
+    section {
+      h2 {
+        font-size: 1.8rem;
+        line-height: 3rem;
+      }
+    }
+
+    img {
+      width: 85%;
+    }
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 6rem;
+
+    img {
+      width: 80% !important;
+    }
+
+    h2 {
+      margin-top: 1rem;
+      width: 100%;
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+
+    a {
+      margin: 3rem auto;
     }
   }
 }

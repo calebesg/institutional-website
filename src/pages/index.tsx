@@ -1,4 +1,7 @@
 import Head from 'next/head'
+import Image from 'next/image'
+
+import techsImg from '../../public/images/techs.svg'
 import styles from '../styles/home.module.scss'
 
 export default function Home() {
@@ -57,6 +60,18 @@ export default function Home() {
           </section>
         </div>
       </main>
+
+      <footer className={styles.footer}>
+        <Image src={techsImg} alt="Techs" />
+        <h2>
+          Mais de <span>15 mil</span> já levaram sua carreira ao próximo nivel.
+        </h2>
+        <span>E você vai perder a chance de evoluir de uma vez por todas?</span>
+
+        <a type="button" href="/">
+          Acessar Turma
+        </a>
+      </footer>
     </>
   )
 }

@@ -86,3 +86,44 @@
     max-width: 550px;
   }
 }
+
+.footer {
+  max-width: 1200px;
+  margin: 10rem auto 6rem;
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    max-width: 90%;
+    font-weight: 900;
+    color: var(--white);
+
+    span {
+      color: var(--blue-500);
+    }
+  }
+
+  span {
+    display: inline-block;
+    color: var(--white);
+    filter: brightness(0.8);
+    margin-top: 1rem;
+  }
+
+  a {
+    display: block;
+    margin-top: 2rem;
+    width: fit-content;
+    background-color: var(--blue-500);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 1.8rem;
+    border-radius: 6px;
+    transition: filter 0.1s ease-out;
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+}

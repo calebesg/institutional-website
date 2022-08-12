@@ -2,6 +2,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import {
+  FiChevronRight,
+  FiChevronsRight,
+  FiChevronLeft,
+  FiChevronsLeft,
+} from 'react-icons/fi'
+
 import postImage from '../../../public/images/thumb.png'
 import styles from './styles.module.scss'
 
@@ -57,6 +64,26 @@ export default function Posts() {
               </p>
             </a>
           </Link>
+
+          <div className={styles.pagination}>
+            <div>
+              <button>
+                <FiChevronsLeft />
+              </button>
+              <button>
+                <FiChevronLeft />
+              </button>
+            </div>
+
+            <div>
+              <button>
+                <FiChevronRight />
+              </button>
+              <button>
+                <FiChevronsRight />
+              </button>
+            </div>
+          </div>
         </div>
       </main>
     </>

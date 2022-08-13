@@ -49,6 +49,8 @@ export default function Posts({ posts }: PostProps) {
                   quality={100}
                   width={720}
                   height={410}
+                  placeholder="blur"
+                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPU1NC8DQACUwFXtx0ewwAAAABJRU5ErkJggg=="
                 />
 
                 <strong>{post.title}</strong>

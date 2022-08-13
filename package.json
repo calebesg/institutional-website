@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prismicio/client": "^5.1.0",
     "next": "12.2.4",
+    "prismic-dom": "^2.2.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
@@ -17,6 +19,7 @@
   },
   "devDependencies": {
     "@types/node": "18.6.5",
+    "@types/prismic-dom": "^2.1.1",
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
     "eslint": "8.21.0",

@@ -1,0 +1,81 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.post {
+  max-width: 720px;
+  margin: 5rem auto;
+
+  img {
+    border-radius: 6px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--white);
+  }
+
+  time {
+    color: var(--gray-100);
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    display: block;
+  }
+}
+
+.postContent {
+  margin-top: 2rem;
+  line-height: 2rem;
+  font-size: 1.125rem;
+  color: var(--gray-50);
+
+  iframe {
+    width: 100%;
+    min-height: 420px;
+    padding: 0.5rem 0;
+  }
+
+  p,
+  ul {
+    margin: 1.5rem 0;
+  }
+
+  ul {
+    padding-left: 1.5rem;
+
+    li {
+      margin: 0.5rem 0;
+    }
+  }
+
+  a {
+    color: var(--blue-500);
+    transition: color 0.1s ease-out;
+
+    &:hover {
+      color: var(--yellow-500);
+    }
+  }
+
+  pre {
+    border-radius: 6px;
+    background-color: var(--gray-700);
+    padding: 1rem;
+    color: var(--gray-100);
+  }
+}
+
+@media (max-width: 600px) {
+  .postContent {
+    iframe {
+      min-height: 250px;
+    }
+
+    pre {
+      overflow-x: scroll;
+    }
+  }
+}

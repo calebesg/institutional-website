@@ -1,0 +1,47 @@
+.container {
+  padding: 5rem 2rem;
+}
+
+.content {
+  max-width: 1200px;
+  min-height: calc(100vh - 12rem);
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+
+  img {
+    max-width: 400px;
+  }
+}
+
+.contentSection {
+  h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--white);
+  }
+
+  P {
+    margin: 2.5rem 0;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: var(--white);
+    opacity: 0.6;
+  }
+
+  a {
+    opacity: 0.6;
+    transition: opacity 0.1s ease-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  a + a {
+    margin-left: 1.25rem;
+  }
+}

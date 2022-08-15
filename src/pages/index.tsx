@@ -8,6 +8,7 @@ import { getPrismicClient } from '../libs/prismic'
 
 import techsImg from '../../public/images/techs.svg'
 import styles from '../styles/home.module.scss'
+import Link from 'next/link'
 
 type Content = {
   title: string
@@ -84,9 +85,9 @@ export default function Home({ content }: HomeProps) {
         </h2>
         <span>E você vai perder a chance de evoluir de uma vez por todas?</span>
 
-        <a type="button" href="/">
-          Acessar Turma
-        </a>
+        <Link href="/" passHref>
+          <a type="button">Acessar Turma</a>
+        </Link>
       </footer>
     </>
   )

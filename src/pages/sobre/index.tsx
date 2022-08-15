@@ -36,16 +36,16 @@ export default function About({ data }: AboutProps) {
             <h1>{data.title}</h1>
             <p>{data.content}</p>
 
-            <a href={data.instagram}>
+            <a href={data.instagram} target="_blank" rel="noreferrer">
               <FaInstagram size={40} color={'white'} />
             </a>
-            <a href={data.youtube}>
+            <a href={data.youtube} target="_blank" rel="noreferrer">
               <FaYoutube size={40} color={'white'} />
             </a>
-            <a href={data.facebook}>
+            <a href={data.facebook} target="_blank" rel="noreferrer">
               <FaFacebook size={40} color={'white'} />
             </a>
-            <a href={data.linkedin}>
+            <a href={data.linkedin} target="_blank" rel="noreferrer">
               <FaLinkedin size={40} color={'white'} />
             </a>
           </section>
@@ -83,5 +83,6 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       data,
     },
+    revalidate: 60 * 60 * 24,
   }
 }

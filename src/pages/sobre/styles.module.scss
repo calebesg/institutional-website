@@ -14,10 +14,12 @@
 
   img {
     max-width: 400px;
+    width: 100%;
   }
 }
 
 .contentSection {
+  max-width: 700px;
   h1 {
     font-weight: 900;
     font-size: 3rem;
@@ -43,5 +45,42 @@
 
   a + a {
     margin-left: 1.25rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .content {
+    gap: 6rem;
+  }
+  .contentSection {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+    padding: 4rem 2rem;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 4rem;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  .contentSection {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
   }
 }
